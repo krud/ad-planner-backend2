@@ -10,6 +10,8 @@ User.destroy_all
 
 u1 = User.create(username: "pb", password: "fuck")
 
-u1.rooms.create(name: "infant", maxCapacity: 20)
-u1.rooms.create(name: "infant2", maxCapacity: 20)
-u1.rooms.create(name: "5th", maxCapacity: 30)
+room1 = u1.rooms.create(name: "infant", max_capacity: 20)
+u1.rooms.create(name: "infant2", max_capacity: 20)
+u1.rooms.create(name: "5th", max_capacity: 30)
+
+room1.students.create(first_name:"Jane", last_name:"Doe", age: 2)

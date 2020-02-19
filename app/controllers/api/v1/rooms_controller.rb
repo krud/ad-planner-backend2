@@ -46,5 +46,4 @@ class Api::V1::RoomsController < ApplicationController
                     :max_capacity
                 )
       end
-
 end
